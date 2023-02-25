@@ -1,0 +1,74 @@
+{
+  "api": {
+    "aws01": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "authenticationType": "AWS_LAMBDA",
+            "lambdaAuthorizerConfig": {
+              "lambdaFunction": "graphQlLambdaAuthorizer7e930586",
+              "ttlSeconds": "300"
+            }
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "custom": {
+    "dynamodb01": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "customCloudformation"
+    }
+  },
+  "function": {
+    "graphQlLambdaAuthorizer7e930586": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "graphQlLambdaAuthorizer993cf135": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_graphQlLambdaAuthorizer7e930586_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "graphQlLambdaAuthorizer7e930586"
+        }
+      ]
+    },
+    "AMPLIFY_function_graphQlLambdaAuthorizer7e930586_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "graphQlLambdaAuthorizer7e930586"
+        }
+      ]
+    },
+    "AMPLIFY_function_graphQlLambdaAuthorizer993cf135_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "graphQlLambdaAuthorizer993cf135"
+        }
+      ]
+    },
+    "AMPLIFY_function_graphQlLambdaAuthorizer993cf135_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "graphQlLambdaAuthorizer993cf135"
+        }
+      ]
+    }
+  }
+}

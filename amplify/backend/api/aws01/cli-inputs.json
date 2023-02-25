@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "aws01",
+    "serviceName": "AppSync",
+    "defaultAuthType": {
+      "mode": "AWS_LAMBDA",
+      "lambdaFunction": "graphQlLambdaAuthorizer7e930586",
+      "ttlSeconds": "300"
+    },
+    "conflictResolution": {},
+    "additionalAuthTypes": []
+  }
+}

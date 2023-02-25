@@ -1,0 +1,48 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Parameters": {
+    "partitionKeyName": {
+      "Type": "String",
+      "Default": "studentid"
+    },
+    "partitionKeyType": {
+      "Type": "String",
+      "Default": "S"
+    },
+    "env": {
+      "Type": "String"
+    }
+  },
+  "Resources": {
+      "MyDynamoDBTable": {
+          "Type": "AWS::DynamoDB::Table",
+          "Properties": {
+              "AttributeDefinitions": [
+                  {
+                      "AttributeName": "studentId",
+                      "AttributeType": "S"
+                  },
+                  {
+                      "AttributeName": "email",
+                      "AttributeType": "S"
+                  }
+              ],
+              "KeySchema": [
+                  {
+                      "AttributeName": "studentId",
+                      "KeyType": "HASH"
+                  },
+                  {
+                      "AttributeName": "email",
+                      "KeyType": "RANGE"
+                  }
+              ],
+              "ProvisionedThroughput": {
+                  "ReadCapacityUnits": 5,
+                  "WriteCapacityUnits": 5
+              },
+              "TableName": "studentDetails"
+          }
+      }
+  }
+}

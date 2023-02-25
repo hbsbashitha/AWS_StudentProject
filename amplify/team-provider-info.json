@@ -1,0 +1,33 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-aws01-dev-152225-authRole",
+      "UnauthRoleArn": "arn:aws:iam::182300065945:role/amplify-aws01-dev-152225-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::182300065945:role/amplify-aws01-dev-152225-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-aws01-dev-152225-deployment",
+      "UnauthRoleName": "amplify-aws01-dev-152225-unauthRole",
+      "StackName": "amplify-aws01-dev-152225",
+      "StackId": "arn:aws:cloudformation:us-east-1:182300065945:stack/amplify-aws01-dev-152225/76b10c80-b1cd-11ed-a361-1236a4784a35",
+      "AmplifyAppId": "dybonmcb2vept"
+    },
+    "categories": {
+      "custom": {
+        "dynamodb01": {}
+      },
+      "api": {
+        "aws01": {}
+      },
+      "function": {
+        "graphQlLambdaAuthorizer993cf135": {
+          "deploymentBucketName": "amplify-aws01-dev-152225-deployment",
+          "s3Key": "amplify-builds/graphQlLambdaAuthorizer993cf135-4a673635322f37306236-build.zip"
+        },
+        "graphQlLambdaAuthorizer7e930586": {
+          "deploymentBucketName": "amplify-aws01-dev-152225-deployment",
+          "s3Key": "amplify-builds/graphQlLambdaAuthorizer7e930586-5977746d57335065506e-build.zip"
+        }
+      }
+    }
+  }
+}
